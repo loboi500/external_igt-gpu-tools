@@ -1,25 +1,3 @@
-FROM debian:stretch-backports
-
-RUN apt-get update
-RUN apt-get install -y \
-			gcc \
-			flex \
-			bison \
-			pkg-config \
-			libatomic1 \
-			libpciaccess-dev \
-			libkmod-dev \
-			libprocps-dev \
-			libdw-dev \
-			zlib1g-dev \
-			liblzma-dev \
-			libcairo-dev \
-			libpixman-1-dev \
-			libudev-dev \
-			libxrandr-dev \
-			libxv-dev \
-			x11proto-dri2-dev
-
-RUN apt-get install -t stretch-backports -y \
-					meson \
-					libdrm-dev
+version https://git-lfs.github.com/spec/v1
+oid sha256:9aa4bb5027101abb66d1502b2c0f6661ffaa56fabde4e264f1aaff39a4125ae0
+size 430

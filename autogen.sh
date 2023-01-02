@@ -1,17 +1,3 @@
-#! /bin/sh
-
-srcdir=`dirname $0`
-test -z "$srcdir" && srcdir=.
-
-ORIGDIR=`pwd`
-cd $srcdir
-
-autoreconf -v --install || exit 1
-cd $ORIGDIR || exit $?
-
-git config --local --get format.subjectPrefix >/dev/null 2>&1 ||
-    git config --local format.subjectPrefix "PATCH i-g-t"
-
-if test -z "$NOCONFIGURE"; then
-        $srcdir/configure "$@"
-fi
+version https://git-lfs.github.com/spec/v1
+oid sha256:74b1fb22207d4d15f75820b19f0eaac3f9189d99a9ae02bf0918f21894048ec7
+size 337

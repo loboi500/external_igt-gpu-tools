@@ -1,12 +1,3 @@
-[binaries]
-c = '/usr/bin/mips-linux-gnu-gcc'
-ar = '/usr/bin/mips-linux-gnu-gcc-ar'
-strip = '/usr/bin/mips-linux-gnu-strip'
-pkgconfig = 'pkg-config'
-exe_wrapper = 'qemu-mips'
-
-[host_machine]
-system = 'linux'
-cpu_family = 'mips'
-cpu = 'mips'
-endian = 'big'
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e42c54d9566d1664b977a11256ca6d295ec8b6e7c832bf6aac2e0334f0647b8
+size 255
